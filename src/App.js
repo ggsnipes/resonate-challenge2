@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Id from './Id.js'
 import { useEffect, useState } from 'react';
 
@@ -14,17 +14,25 @@ function App() {
 
   const handleClick = (event) => {
     event.preventDefault()
-    console.log("this works")
+
+    
   }
 
   return (
     <div className="App">
-      <section>
-        {contacts ? contacts.map(contact => <a href={contact.id} onClick={handleClick}>{contact.name}</a>) : "now loading contacts..."}
-      </section>
+      <ul className='contact-area'>
+        {contacts ? contacts.map(contact =>
+          <div className='contact-card'>
+            <article className='card-content'>
+              <p>{"Name: "}{contact.name}{"\n"}</p>
+              <p>{"User: "}{contact.username}{"\n"}</p>
+              <p>{"Email: "}{contact.email}{"\n"}</p>
+            </article>
+          </div>) : "now loading contacts..."}
+      </ul>
 
       <section>
-
+        {/* <Id/> */}
       </section>
 
     </div>
