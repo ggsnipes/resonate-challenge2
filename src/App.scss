@@ -52,6 +52,7 @@ body {
   flex-direction: row;
   flex-basis: 20em;
   gap: 15px;
+  justify-content: space-evenly;
 }
 
 .contact-card {
@@ -60,6 +61,9 @@ body {
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   flex-direction: column;
   width: 300px;
+  height: auto;
+
+  // margin: auto;
   overflow: hidden;
   // &:hover {
   //   .card__image {
@@ -71,4 +75,21 @@ body {
 
 .card-content {
   flex: 0 1 24%;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: darkslateblue;
+  }
+
+  // .contact-area {
+  //   justify-content: center;
+  //   align-items: center;
+
+  // }
+
+  .contact-card {
+    width: 80vw;
+  }
+
 }

@@ -27,6 +27,7 @@ function App() {
               <p>{"Name: "}{contact.name}{"\n"}</p>
               <p>{"User: "}{contact.username}{"\n"}</p>
               <p>{"Email: "}{contact.email}{"\n"}</p>
+              <p>{"Phone: "}{contact.phone}</p>
             </article>
           </div>) : "now loading contacts..."}
       </ul>
