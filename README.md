@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Real World Problem
 
-Follow the instructions regarding `npm start`
+Follow the instructions regarding `npm start`, otherwise please use [this link](https://resonate-challenge.onrender.com) to view the site in it's current format.
 
 ## Available Scripts
 
