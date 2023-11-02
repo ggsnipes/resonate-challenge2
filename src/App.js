@@ -1,5 +1,4 @@
 import './App.scss';
-import Id from './Id.js'
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul className='contact-area'>
+      <section className='contact-area'>
         {contacts ? contacts.map(contact =>
           <div className='contact-card'>
             <article className='card-content'>
@@ -30,12 +29,7 @@ function App() {
               <p>{"Phone: "}{contact.phone}</p>
             </article>
           </div>) : "now loading contacts..."}
-      </ul>
-
-      <section>
-        {/* <Id/> */}
       </section>
-
     </div>
   );
 }
