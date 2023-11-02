@@ -12,11 +12,11 @@ function App() {
     .then(res => setContacts(res))
   }, [])
 
-  const handleClick = (event) => {
-    event.preventDefault()
-
-    
-  }
+  // const handleClick = (event) => {
+  //   event.preventDefault()
+  //   let card = document.getElementsByClassName('card-content')
+  //   card.innerHTML = '<p>hi, did this work</p>'
+  // }
 
   return (
     <div className="App">

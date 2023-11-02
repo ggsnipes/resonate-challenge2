@@ -53,6 +53,8 @@ body {
   flex-basis: 20em;
   gap: 15px;
   justify-content: space-evenly;
+  padding-right: 25px;
+  padding-left: 25px; 
 }
 
 .contact-card {
@@ -62,8 +64,6 @@ body {
   flex-direction: column;
   width: 300px;
   height: auto;
-
-  // margin: auto;
   overflow: hidden;
   // &:hover {
   //   .card__image {
@@ -77,7 +77,7 @@ body {
   flex: 0 1 24%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
   body {
     background-color: darkslateblue;
   }
