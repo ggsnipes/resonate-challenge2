@@ -23,7 +23,7 @@ function App() {
         {contacts ? contacts.map(contact =>
           <div className='contact-card'>
             <article className='card-content'>
-              <p>{"Name: "}{contact.name}{"\n"}</p>
+              <p className='name'>{contact.name}{"\n"}</p>
               <p>{"User: "}{contact.username}{"\n"}</p>
               <p>{"Email: "}{contact.email}{"\n"}</p>
               <p>{"Phone: "}{contact.phone}</p>
